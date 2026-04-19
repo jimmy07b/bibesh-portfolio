@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bibesh Roy — Cybersecurity & AI Specialist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- NAVIGATION -->
+  <nav class="nav" id="nav">
+    <div class="nav__logo">BIBESH ROY<span class="nav__logo-accent">.</span></div>
+    <ul class="nav__links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#what-i-do">Services</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certs">Certifications</a></li>
+    </ul>
+    <button class="btn btn--accent nav__cta" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Contact</button>
+    <button class="nav__hamburger" id="hamburger" aria-label="Open menu" aria-controls="mobileMenu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="hero">
+    <div class="hero__left">
+      <h1 class="hero__name reveal">
+        <span class="hero__name-first">BIBESH</span>
+        <span class="hero__name-last">ROY</span>
+      </h1>
+
+      <div class="hero__pills reveal stagger-1" aria-label="Key roles">
+        <span class="pill pill--accent">Ethical Hacker</span>
+        <span class="pill">AI Enthusiast</span>
+        <span class="pill">CEH Candidate</span>
+      </div>
+      
+      <p class="hero__tagline reveal stagger-2">
+        Ethical hacker and AI builder crafting practical, intelligent security solutions — from recon workflows to automation and research.
+      </p>
+      
+      <div class="hero__actions reveal stagger-3">
+        <a href="#projects" class="btn btn--accent">View Projects</a>
+        <a href="#contact" class="btn btn--secondary">Contact</a>
+      </div>
+    </div>
+
+    <div class="hero__right reveal stagger-4">
+      <div class="terminal-card terminal-card--hero" aria-label="Animated terminal interface">
+        <div class="terminal-card__bar" aria-hidden="true">
+          <div class="terminal-card__dots">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="terminal-card__label mono">root@bibesh:~</div>
+        </div>
+        <div class="terminal-card__screen mono">
+          <p class="sr-only">Terminal simulation showing: root@bibesh:~$ scanning... status: active.</p>
+          <div class="terminal-card__output" id="terminalOutput" aria-hidden="true"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="about" id="about">
+    <div class="about__container">
+      <div class="about__grid">
+        <div>
+          <div class="terminal-card terminal-card--about reveal">
+            <div class="terminal-card__bar" aria-hidden="true">
+              <div class="terminal-card__dots">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="terminal-card__label mono">root@bibesh:~</div>
+            </div>
+            <div class="terminal-card__screen mono">
+              <div class="terminal-card__line"><span class="terminal-card__prompt">root@bibesh:~$</span> whoami</div>
+              <div class="terminal-card__line terminal-card__answer">Bibesh Roy — Ethical Hacker • AI Builder</div>
+              <div class="terminal-card__line"><span class="terminal-card__prompt">root@bibesh:~$</span> focus</div>
+              <div class="terminal-card__line terminal-card__answer">Pentesting · CTF · AI automation</div>
+              <div class="terminal-card__line"><span class="terminal-card__prompt">root@bibesh:~$</span> status</div>
+              <div class="terminal-card__line terminal-card__answer"><span class="terminal-card__status-dot" aria-hidden="true"></span> active</div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="about__heading reveal">About me.</h2>
+          
+          <p class="about__text reveal stagger-1">
+            I'm <strong>Bibesh Roy</strong>, an ethical hacker and CEH candidate from Jalpaiguri, West Bengal. Currently pursuing my BCA at EIILM Kolkata while completing my Diploma in Cyber Security at ISOEH.
+          </p>
+          
+          <p class="about__text reveal stagger-2">
+            My focus is the intersection of <strong>AI and cybersecurity</strong>. I use AI daily as a practical tool—not just hype—to accelerate learning, automate security workflows, and build smarter solutions. I believe the future of security lies at this convergence.
+          </p>
+
+          <div class="about__details reveal stagger-3">
+            <div>
+              <h4 class="detail__title">Education</h4>
+              <div class="edu__item">
+                <span class="edu__year">2025–2029</span>
+                <div>
+                  <strong>BCA</strong>
+                  <p class="edu__sub">EIILM Kolkata, Jalpaiguri</p>
+                </div>
+              </div>
+              <div class="edu__item">
+                <span class="edu__year">2025–2027</span>
+                <div>
+                  <strong>Diploma in Cyber Security</strong>
+                  <p class="edu__sub">ISOEH — Indian School of Ethical Hacking</p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h4 class="detail__title">Core Skills</h4>
+              <div class="skills__grid">
+                <span class="skill-tag skill-tag--accent">Prompt Engineering</span>
+                <span class="skill-tag">Network Security</span>
+                <span class="skill-tag skill-tag--accent">AI & ML</span>
+                <span class="skill-tag">Kali Linux</span>
+                <span class="skill-tag">Burp Suite</span>
+                <span class="skill-tag">Python</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT I DO SECTION -->
+  <section class="what-i-do" id="what-i-do">
+    <div class="what-i-do__container">
+      <h2 class="section-heading reveal">
+        What I <span class="section-heading-accent">Do</span>
+      </h2>
+
+      <div class="what-i-do__grid">
+        <div class="focus-card reveal stagger-1">
+          <div class="focus-card__icon">🔐</div>
+          <h3 class="focus-card__title">Ethical Hacking</h3>
+          <p class="focus-card__desc">
+            Penetration testing, vulnerability assessment, CTF competitions, OSINT investigations, and real-world attack/defense scenarios using industry-standard tools like Kali Linux, Burp Suite, and Nmap.
+          </p>
+          <div class="focus-card__tags">
+            <span>Pentesting</span>
+            <span>Bug Bounty</span>
+            <span>OSINT</span>
+            <span>CTF</span>
+          </div>
+        </div>
+
+        <div class="focus-card focus-card--featured reveal stagger-2">
+          <div class="focus-card__icon">⚡</div>
+          <h3 class="focus-card__title">AI Development</h3>
+          <p class="focus-card__desc">
+            Building AI-powered tools, automation workflows, and intelligent systems. Using AI to solve security problems, accelerate learning, and create smarter solutions at the intersection of AI and cybersecurity.
+          </p>
+          <div class="focus-card__tags">
+            <span>LLMs</span>
+            <span>Automation</span>
+            <span>Python</span>
+            <span>Prompting</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE SECTION -->
+  <section class="experience" id="experience">
+    <div class="experience__container">
+      <h2 class="experience__heading reveal">
+        My <span class="experience__headline-outline">Experience</span>
+      </h2>
+
+      <div class="timeline">
+        <div class="timeline__item reveal stagger-1">
+          <div class="timeline__date">Apr 2025 – Present</div>
+          <div class="timeline__dot timeline__dot--highlight"></div>
+          <div class="timeline__card timeline__card--highlight">
+            <h3 class="timeline__role">Cybersecurity Diploma Student & Lab Practitioner</h3>
+            <p class="timeline__org">ISOEH — Indian School of Ethical Hacking, Siliguri</p>
+            <p class="timeline__desc">
+              Hands-on training in ethical hacking, penetration testing, and network security methodologies through real-world attack and defense scenarios. Building CCNA-level networking knowledge applied directly to security analysis.
+            </p>
+            <div class="timeline__skills">
+              <span>Kali Linux</span>
+              <span>Burp Suite</span>
+              <span>Nmap</span>
+              <span>Pentesting</span>
+              <span>Network Security</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline__item reveal stagger-2">
+          <div class="timeline__date">May 2025 – Present</div>
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <h3 class="timeline__role">BCA Student — Cybersecurity & AI Focus</h3>
+            <p class="timeline__org">EIILM Kolkata, Jalpaiguri Campus</p>
+            <p class="timeline__desc">
+              Pursuing a Bachelor of Computer Applications with active focus on AI, networking, and cybersecurity. Building skills across AI fundamentals, networking, security principles, and full-stack development.
+            </p>
+            <div class="timeline__skills">
+              <span>AI Fundamentals</span>
+              <span>Networking</span>
+              <span>Security Basics</span>
+              <span>Python</span>
+              <span>Web Development</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline__item reveal stagger-3">
+          <div class="timeline__date">Jan 2025 – Present</div>
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <h3 class="timeline__role">CTF Competitor & Security Researcher</h3>
+            <p class="timeline__org">Independent / TryHackMe / HackTheBox</p>
+            <p class="timeline__desc">
+              Actively competing in Capture The Flag competitions for offensive security skill development. Self-studying AI/ML intersection with cybersecurity, IoT security, and hardware hacking. Ongoing research into dark web analysis, OSINT, and threat intelligence.
+            </p>
+            <div class="timeline__skills">
+              <span>CTF</span>
+              <span>OSINT</span>
+              <span>IoT Security</span>
+              <span>Reverse Engineering</span>
+              <span>Threat Intel</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section class="projects" id="projects">
+    <div class="projects__container">
+      <h2 class="projects-heading reveal">
+        Featured <span class="projects-heading-accent">Projects</span>
+      </h2>
+
+      <div class="projects__grid">
+        <!-- Featured Project -->
+        <div class="project-card project-card--featured reveal stagger-1">
+          <div class="project__meta">
+            <span class="project__category">AI • Web • React</span>
+            <span>2025</span>
+          </div>
+          <h3 class="project__title">RootLayer — AI Personal Website</h3>
+          <p class="project__description">
+            My personal website built with AI integration. Features live Claude API responses, custom prompt-engineered assistant, and cyberpunk-inspired UI. Proof of concept that AI-assisted development produces genuinely unique digital experiences.
+          </p>
+          <div class="project__stack">
+            <span>React</span>
+            <span>Claude API</span>
+            <span>Node.js</span>
+            <span>Tailwind</span>
+            <span>Framer Motion</span>
+          </div>
+          <a href="https://rootlayer-jet.vercel.app/" class="btn btn--accent project__btn" target="_blank" rel="noopener noreferrer">
+            View Project <span aria-hidden="true">→</span>
+          </a>
+        </div>
+
+        <!-- Project 1 -->
+        <div class="project-card reveal stagger-2">
+          <div class="project__meta">
+            <span class="project__category">Security • Python</span>
+            <span>2025</span>
+          </div>
+          <h3 class="project__title">Recon Toolkit</h3>
+          <p class="project__description">
+            Custom Python reconnaissance toolkit for bug bounty and pentesting workflows. Automates subdomain enumeration, port scanning, and footprinting to speed up the recon phase.
+          </p>
+          <div class="project__stack">
+            <span>Python</span>
+            <span>Nmap</span>
+            <span>OSINT</span>
+          </div>
+          <a href="#" class="btn btn--primary project__btn" aria-disabled="true">
+            View Project <span aria-hidden="true">→</span>
+          </a>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card reveal stagger-3">
+          <div class="project__meta">
+            <span class="project__category">IoT • Hardware • Security</span>
+            <span>2025</span>
+          </div>
+          <h3 class="project__title">WiFi Pentesting Device</h3>
+          <p class="project__description">
+            Custom IoT security device built on ESP32 and ESP8266 microcontrollers for wireless penetration testing. Capable of deauth attacks, packet sniffing, and wireless reconnaissance.
+          </p>
+          <div class="project__stack">
+            <span>ESP32</span>
+            <span>C++</span>
+            <span>WiFi Security</span>
+          </div>
+          <a href="#" class="btn btn--primary project__btn" aria-disabled="true">
+            View Project <span aria-hidden="true">→</span>
+          </a>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card reveal stagger-4">
+          <div class="project__meta">
+            <span class="project__category">Security • Python Tool</span>
+            <span>2025</span>
+          </div>
+          <h3 class="project__title">Hash Cracker</h3>
+          <p class="project__description">
+            Python-based hash cracking utility supporting MD5, SHA1, and SHA256. Implements dictionary and brute-force attack modes with wordlist support for CTF and security learning.
+          </p>
+          <div class="project__stack">
+            <span>Python</span>
+            <span>Cryptography</span>
+            <span>CLI</span>
+          </div>
+          <a href="#" class="btn btn--primary project__btn" aria-disabled="true">
+            View Project <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS SECTION -->
+  <section class="certs" id="certs">
+    <div class="certs__container">
+      <h2 class="certs__heading reveal">
+        Earned <span class="certs__heading-accent">Credentials</span>
+      </h2>
+
+      <div class="certs__grid">
+        <!-- Featured Cert -->
+        <div class="cert-card cert-card--featured reveal stagger-1">
+          <div class="cert-logo">
+            <svg width="50" height="50" viewBox="0 0 50 50" fill="none">
+              <rect width="50" height="50" rx="10" fill="rgba(255,214,10,0.15)"/>
+              <path d="M12 25c0-7 6-12 13-12s13 5 13 12-6 12-13 12-13-5-13-12z" stroke="var(--accent)" stroke-width="2"/>
+              <path d="M18 25l5 5 10-12" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="cert__content">
+            <div class="cert__header">
+              <h3 class="cert__title">Ethical Hacker Certification</h3>
+              <p class="cert__issuer">Cisco Verified</p>
+            </div>
+            <p class="cert__desc">Cisco-verified credential covering ethical hacking methodology, pentesting fundamentals, and responsible disclosure.</p>
+          </div>
+          <span class="cert__badge">Verified</span>
+        </div>
+
+        <!-- Cert 1 -->
+        <div class="cert-card reveal stagger-2">
+          <div class="cert__header">
+            <h3 class="cert__title">Introduction to Cybersecurity</h3>
+            <p class="cert__issuer">Cisco Academy</p>
+          </div>
+          <p class="cert__desc">Security foundations: threats, vulnerabilities, defense basics, and best practices.</p>
+        </div>
+
+        <!-- Cert 2 -->
+        <div class="cert-card reveal stagger-3">
+          <div class="cert__header">
+            <h3 class="cert__title">Networking Devices & Configuration</h3>
+            <p class="cert__issuer">Cisco Academy</p>
+          </div>
+          <p class="cert__desc">Router/switch configuration and device hardening fundamentals (CCNA-aligned).</p>
+        </div>
+
+        <!-- Cert 3 -->
+        <div class="cert-card reveal stagger-4">
+          <div class="cert__header">
+            <h3 class="cert__title">Advanced Networking</h3>
+            <p class="cert__issuer">ISOEH</p>
+          </div>
+          <p class="cert__desc">Advanced architecture and protocols applied to practical security analysis.</p>
+        </div>
+
+        <!-- Cert 4 -->
+        <div class="cert-card reveal stagger-1">
+          <div class="cert__header">
+            <h3 class="cert__title">Core Python</h3>
+            <p class="cert__issuer">ISOEH</p>
+          </div>
+          <p class="cert__desc">Python fundamentals for scripting, automation, and building practical security tools.</p>
+        </div>
+
+        <!-- CEH In Progress -->
+        <div class="cert-card reveal stagger-2">
+          <div class="cert__header">
+            <h3 class="cert__title">CEH — Certified Ethical Hacker</h3>
+            <p class="cert__issuer">EC-Council • In Progress</p>
+          </div>
+          <p class="cert__desc">Preparing across recon, scanning, exploitation, post-exploitation, and reporting.</p>
+          <div class="cert__progress">
+            <div class="cert__progress-bar">
+              <div class="cert__progress-fill" style="width: 60%;"></div>
+            </div>
+            <span class="cert__in-progress">60%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact" id="contact">
+    <div class="contact__container">
+      <div>
+        <h2 class="contact__heading reveal">
+          Let's <span class="contact__heading-accent">Connect</span>
+        </h2>
+        <p class="contact__intro reveal stagger-1">
+          Open for collaborations, CTF team-ups, AI experiments, and genuine conversations about cybersecurity. Let's build something incredible together.
+        </p>
+      </div>
+
+      <div class="contact__grid reveal stagger-2">
+        <div class="contact__links">
+          <a href="mailto:roybibesh69@gmail.com" class="contact__link">
+            <div class="contact__link-icon">@</div>
+            <div>
+              <span class="contact__link-label">Email</span>
+              <span class="contact__link-value">roybibesh69@gmail.com</span>
+            </div>
+          </a>
+
+          <a href="https://www.linkedin.com/in/hackwithbibx" target="_blank" rel="noopener noreferrer" class="contact__link">
+            <div class="contact__link-icon">in</div>
+            <div>
+              <span class="contact__link-label">LinkedIn</span>
+              <span class="contact__link-value">hackwithbibx</span>
+            </div>
+          </a>
+
+          <a href="https://instagram.com/hackwith.bibx_" target="_blank" rel="noopener noreferrer" class="contact__link">
+            <div class="contact__link-icon">📷</div>
+            <div>
+              <span class="contact__link-label">Instagram</span>
+              <span class="contact__link-value">@hackwith.bibx_</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="contact__form">
+          <h3 class="contact__form-title">Send Message</h3>
+          <div class="contact__field">
+            <label class="contact__label" for="contactName">Name</label>
+            <input id="contactName" name="name" type="text" class="contact__input" placeholder="Your name" autocomplete="name" />
+          </div>
+          <div class="contact__field">
+            <label class="contact__label" for="contactEmail">Email</label>
+            <input id="contactEmail" name="email" type="email" class="contact__input" placeholder="your@email.com" autocomplete="email" />
+          </div>
+          <div class="contact__field">
+            <label class="contact__label" for="contactMessage">Message</label>
+            <textarea id="contactMessage" name="message" class="contact__input contact__textarea" placeholder="What's on your mind..."></textarea>
+          </div>
+          <button class="btn btn--accent contact__submit" type="button" onclick="handleContactSubmit(this)">
+            Send Message <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="contact__footer">
+        <div>
+          <p class="mono">BX • Bibesh Roy</p>
+          <p class="mono contact__footer-meta">Jalpaiguri, WB • 2026</p>
+        </div>
+        <p class="mono contact__footer-meta">Security × AI • built with code & curiosity</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- SCROLL TO TOP BUTTON -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
